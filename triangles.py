@@ -1,4 +1,3 @@
-import math
 
 #Get input from user and store in dictionary (side['a'])
 side = {
@@ -59,7 +58,7 @@ if isTriangle == True:
     b = b if b != C else c
 
     #if a * a + b * b == c * c:
-    if math.pow(a, 2) + math.pow(b, 2) == math.pow(C, 2):
+    if a ** 2 + b ** 2 == c ** 2:
         print(f"{side1}, {side2}, and {side3} form a Pythagorean triple")
     else:
         print(f"{side1}, {side2}, and {side3} do not form a Pythagorean triple")
